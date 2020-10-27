@@ -4,13 +4,16 @@
     <body>
         <form action="form2.html" method="POST">
             <fieldset> 
-                <legend>form pendaftaran</legend>
+               
                 <h1>Student Registration Form</h1>
+                <br><br>
         <header>
-            <p style="text-align:right">
-                        <label>DATE</label>
-                        <input type="text" name="DATE"  />
-            </p>
+            <table align="right">
+                <tr>
+                    <td>Date</td>
+                    <td><input type="date" name="date" value="" required></td>
+                </tr>
+            </table>
         </header>
         <body>
             <H2>PERSONAL INFORMATION</H2>
@@ -20,11 +23,11 @@
                         <pre></pre>
                         <input type="text" name="NAME"/>
                     </p>
-                    <p>
-                        <label>DATE OF BIRTH</label>               
+                    <tr>
+                        <td><label>DATE OF BIRTH</label></td>
                         <pre></pre>
-                        <input type="text" name="DATE OF BIRTH"/>
-                    </p>
+                        <td><input type="date" name="birth" value="" style="width: 665px;" required></td>
+                    </tr>
                 
                     <br>
                     <h2>CONTACT INFORMATION</h2>
@@ -35,27 +38,27 @@
                             <input type="text" name="ADDRESS"/>
                         </p>
                         
-                            <label>CITY</label>
-                            <input type="text" name="CITY"Style=”float:left”/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <label>PROVINCE/STATE</label>
-                            
-                            <input type="text" name="PROVINCE/STATE">           
-                        
-                        <p>
-                            <label>ZIP CODE</label>
-                            <input type="text" name="ZIP CODE" Style=”float:left”/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <label>COUNTRY</label>
-                            <input type="text" name="COUNTRY">           
-                        </p>
-                        <p>
-                            <label>PHONE</label>
-                            <input type="text" name="PHONE" Style=”float:left”/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <label>EMAIL</label>
-                            <input type="text" name="EMAIL">           
-                        </p>
+                            <table>
+                                <tr>
+                                    <td>CITY</td>
+                                    <td><input type="text" name="city" value="" required></td>
+                                    <td>PROVINCE/STATE</td>
+                                    <td><input type="text" name="state" value="" required></td>
+                                </tr>
+                                <tr>
+                                    <td>ZIP CODE</td>
+                                    <td><input type="number" name="zipcode" value=""></td>
+                                    <td>COUNTRY</td>
+                                    <td><input type="text" name="country" value="" required></td>
+                                </tr>
+                                <tr>
+                                    <td>PHONE</td>
+                                    <td><input type="tel" name="phone" value="" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"></td>
+                                    <td>EMAIL</td>
+                                    <td><input type="email" name="email" value="" required></td>
+                                </tr>
+                            </table>
+                       
                         <p>
                             <label>MEMBERSHIP TYPE</label>
                         
@@ -85,10 +88,24 @@
                         <pre></pre>
                         <input type="text" name="COMENTS"/>
                     </p>
-                    <p>
-                        <input type="submit" value="submit">
-                    </p>   
-                          
+                </table>
+                <br>
+                <footer>
+                    <table>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="53" rows="5" placeholder="STUDENT'S SIGNATURE"></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="53" rows="5" placeholder="VALIDATED BY"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <center>
+                        <input type="submit" value="submit" width="200px" height="100">
+                    </center>
+                </footer>                        
             </fieldset>
         </form>
     </body>
